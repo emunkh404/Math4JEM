@@ -2,7 +2,7 @@
     width: 80px;
     height: 100px;
     background: #fff;
-    border: 2px solid #000;
+    border: hidden;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     position: relative;
     margin: 10px;
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px; /* Adjust the font size as needed */
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 500;
     height: 100%;
   }

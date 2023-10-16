@@ -72,18 +72,26 @@ export default function Game() {
   );
 
   return (
-    <div>
+    <div style={{width: "80%", marginLeft: "10%"}}>
       {operationTypes.map((op) => (
         <button
           key={op}
           onClick={() => handleOperationChange(op)}
-          style={{ margin: "1rem", width: "2rem", textAlign: "center" }}
+          style={{
+            margin: "1rem",
+            width: "3rem",
+            textAlign: "center",
+            fontWeight: 500,
+            fontSize: "1rem",
+          }}
         >
           {op}
         </button>
-      ))}<hr></hr>
-      <h1>Find the right EGG:</h1>
-      <div><hr></hr>
+      ))}
+      <hr></hr>
+      <h2>FIND A RIGHT EGG</h2>
+      <div>
+        <hr></hr>
         <p style={{ fontSize: "8rem" }}>
           {`${randomNums.val1} ${operation} ${randomNums.val2}`}
         </p>
@@ -107,7 +115,8 @@ export default function Game() {
             />
           );
         })}
-      </div><hr></hr>
+      </div>
+      <hr></hr>
       <p style={{ fontSize: "2rem" }}>Score: {score}</p>
     </div>
   );

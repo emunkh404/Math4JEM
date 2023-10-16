@@ -1,7 +1,6 @@
 
 import './App.css';
 import Game from "./components/game/Game"
-import generateRandomNumbers from './function/generateRandomNumbers';
 
 function App() {
 

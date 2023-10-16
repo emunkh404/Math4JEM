@@ -72,7 +72,7 @@ export default function Game() {
   );
 
   return (
-    <div style={{width: "80%", marginLeft: "10%"}}>
+    <div style={{ width: "90%", marginLeft: "5%" }}>
       {operationTypes.map((op) => (
         <button
           key={op}
@@ -88,11 +88,11 @@ export default function Game() {
           {op}
         </button>
       ))}
-      <hr></hr>
-      <h2>FIND A RIGHT EGG</h2>
+      <hr style={{fontSize: "2rem"}}></hr>
+      <p>FIND A RIGHT EGG</p>
       <div>
         <hr></hr>
-        <p style={{ fontSize: "8rem" }}>
+        <p style={{ fontSize: "6rem" }}>
           {`${randomNums.val1} ${operation} ${randomNums.val2}`}
         </p>
       </div>
